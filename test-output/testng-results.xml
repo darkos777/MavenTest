@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12282" started-at="2020-02-23T15:07:15 CET" finished-at="2020-02-23T15:07:27 CET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12282" started-at="2020-02-23T15:07:15 CET" finished-at="2020-02-23T15:07:27 CET">
+      <class name="package_project2.TestExe">
+        <test-method status="PASS" signature="openBrowserTest()[pri:0, instance:package_project2.TestExe@2a17b7b6]" name="openBrowserTest" is-config="true" duration-ms="6316" started-at="2020-02-23T15:07:15 CET" finished-at="2020-02-23T15:07:21 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserTest -->
+        <test-method status="PASS" signature="startAppTest()[pri:1, instance:package_project2.TestExe@2a17b7b6]" name="startAppTest" duration-ms="5929" started-at="2020-02-23T15:07:21 CET" finished-at="2020-02-23T15:07:27 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppTest -->
+      </class> <!-- package_project2.TestExe -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
