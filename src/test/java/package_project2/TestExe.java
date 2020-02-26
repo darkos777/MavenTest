@@ -16,7 +16,7 @@ public class TestExe
 		try 
 		{
 			//System.setProperty("webdriver.chrome.driver", "D:\\DigitalAtrium\\Selenium_files\\chrome_driver79\\chromedriver.exe");
-			System.setProperty("webdriver.chrome.driver", "https://github.com/darkos777/MavenTest/blob/master/chromedriver.exe");			
+			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/FreestyleForMaven/chromedriver.exe");			
 			driver = new ChromeDriver();
 		} 
 		catch (Exception e) 
