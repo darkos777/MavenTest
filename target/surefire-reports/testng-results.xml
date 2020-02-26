@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="package_project2.TestExe" duration-ms="12621" started-at="2020-02-24T08:56:21 CET" finished-at="2020-02-24T08:56:33 CET">
+  <suite name="package_project2.TestExe" duration-ms="12659" started-at="2020-02-26T11:05:42 CET" finished-at="2020-02-26T11:05:55 CET">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="12621" started-at="2020-02-24T08:56:21 CET" finished-at="2020-02-24T08:56:33 CET">
+    <test name="Command line test" duration-ms="12659" started-at="2020-02-26T11:05:42 CET" finished-at="2020-02-26T11:05:55 CET">
       <class name="package_project2.TestExe">
-        <test-method status="PASS" signature="openBrowserTest()[pri:0, instance:package_project2.TestExe@13deb50e]" name="openBrowserTest" is-config="true" duration-ms="6407" started-at="2020-02-24T08:56:21 CET" finished-at="2020-02-24T08:56:27 CET">
+        <test-method status="PASS" signature="openBrowserTest()[pri:0, instance:package_project2.TestExe@13deb50e]" name="openBrowserTest" is-config="true" duration-ms="6495" started-at="2020-02-26T11:05:42 CET" finished-at="2020-02-26T11:05:49 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserTest -->
-        <test-method status="PASS" signature="startAppTest()[pri:1, instance:package_project2.TestExe@13deb50e]" name="startAppTest" duration-ms="6178" started-at="2020-02-24T08:56:27 CET" finished-at="2020-02-24T08:56:33 CET">
+        <test-method status="PASS" signature="startAppTest()[pri:1, instance:package_project2.TestExe@13deb50e]" name="startAppTest" duration-ms="6130" started-at="2020-02-26T11:05:49 CET" finished-at="2020-02-26T11:05:55 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppTest -->
