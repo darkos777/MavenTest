@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: package_project2.TestExe
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.78 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.773 sec

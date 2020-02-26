@@ -16,19 +16,6 @@ public class TestExe
 	@BeforeTest
 	public void openBrowserTest()
 	{
-		/*
-		try 
-		{
-			//System.setProperty("webdriver.chrome.driver", "D:\\DigitalAtrium\\Selenium_files\\chrome_driver79\\chromedriver.exe");
-			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/FreestyleForMaven/chromedriver_linux");			
-			driver = new ChromeDriver();
-		} 
-		catch (Exception e) 
-		{
-			System.out.println("STARTING BROWSER NOT POSSIBLE: " + e.getMessage());
-		}
-		*/
-		
 		WebDriverManager.chromedriver().version("79.0.3945.36").setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized"); 
@@ -46,5 +33,6 @@ public class TestExe
 	{
 		base = new Base(driver);
 		base.getAppURL("https://nd-cta-staging.com/login");
+		//some random comment
 	}
 }
