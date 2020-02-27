@@ -17,14 +17,17 @@ public class TestExe
 	public void openBrowserTest()
 	{
 		WebDriverManager.chromedriver().version("79.0.3945.36").setup();
+		
 		ChromeOptions options = new ChromeOptions();
+		
 		options.addArguments("start-maximized"); 
 		options.addArguments("enable-automation"); 
-		options.addArguments("--no-sandbox"); 
-		options.addArguments("--disable-infobars");
-		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--disable-browser-side-navigation"); 
-		options.addArguments("--disable-gpu"); 
+		options.addArguments("no-sandbox"); 			//--
+		options.addArguments("disable-infobars");		//--
+		options.addArguments("disable-dev-shm-usage");	//--
+		options.addArguments("disable-browser-side-navigation"); 	//--
+		options.addArguments("disable-gpu"); 			//--
+		
 		driver = new ChromeDriver(options); 
 	}
 	
@@ -33,6 +36,5 @@ public class TestExe
 	{
 		base = new Base(driver);
 		base.getAppURL("https://nd-cta-staging.com/login");
-		//some random comment
 	}
 }
