@@ -22,11 +22,13 @@ public class TestExe
 		
 		options.addArguments("start-maximized"); 
 		options.addArguments("enable-automation"); 
-		options.addArguments("no-sandbox"); 			//--
-		options.addArguments("disable-infobars");		//--
-		options.addArguments("disable-dev-shm-usage");	//--
-		options.addArguments("disable-browser-side-navigation"); 	//--
-		//options.addArguments("disable-gpu"); 			//--
+		options.addArguments("--no-sandbox"); 			
+		options.addArguments("--disable-infobars");		
+		options.addArguments("--disable-dev-shm-usage");	
+		options.addArguments("--disable-browser-side-navigation"); 
+		options.addArguments("--disable-gpu"); 
+		options.addArguments("--headless");
+		options.addArguments("--remote-debugging-port=9222");
 		
 		driver = new ChromeDriver(options); 
 	}
