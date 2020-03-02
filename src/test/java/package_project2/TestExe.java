@@ -12,6 +12,7 @@ public class TestExe
 {
 	WebDriver driver;
 	Base base;
+	LoginPage login_page;
 	
 	@BeforeTest
 	public void openBrowserTest()
@@ -38,5 +39,15 @@ public class TestExe
 	{
 		base = new Base(driver);
 		base.getAppURL("https://nd-cta-staging.com/login");
+	}
+	
+	@Test(priority = 2)
+	public void LoginPageTest() throws InterruptedException
+	{
+		login_page = new LoginPage(driver);
+		
+		login_page.typeEmail("admin@prodactivesolutions.com");
+		login_page.typePassword("Neur@2019");
+		login_page.clickLoginButton();
 	}
 }

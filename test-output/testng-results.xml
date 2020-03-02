@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12083" started-at="2020-02-27T13:49:15 CET" finished-at="2020-02-27T13:49:27 CET">
+  <suite name="Default suite" duration-ms="28257" started-at="2020-03-02T15:08:04 CET" finished-at="2020-03-02T15:08:32 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12083" started-at="2020-02-27T13:49:15 CET" finished-at="2020-02-27T13:49:27 CET">
+    <test name="Default test" duration-ms="28257" started-at="2020-03-02T15:08:04 CET" finished-at="2020-03-02T15:08:32 CET">
       <class name="package_project2.TestExe">
-        <test-method status="PASS" signature="openBrowserTest()[pri:0, instance:package_project2.TestExe@56aac163]" name="openBrowserTest" is-config="true" duration-ms="6128" started-at="2020-02-27T13:49:15 CET" finished-at="2020-02-27T13:49:21 CET">
+        <test-method status="PASS" signature="openBrowserTest()[pri:0, instance:package_project2.TestExe@56aac163]" name="openBrowserTest" is-config="true" duration-ms="6429" started-at="2020-03-02T15:08:04 CET" finished-at="2020-03-02T15:08:10 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserTest -->
-        <test-method status="PASS" signature="startAppTest()[pri:1, instance:package_project2.TestExe@56aac163]" name="startAppTest" duration-ms="5918" started-at="2020-02-27T13:49:21 CET" finished-at="2020-02-27T13:49:27 CET">
+        <test-method status="PASS" signature="startAppTest()[pri:1, instance:package_project2.TestExe@56aac163]" name="startAppTest" duration-ms="5749" started-at="2020-03-02T15:08:10 CET" finished-at="2020-03-02T15:08:16 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppTest -->
+        <test-method status="PASS" signature="LoginPageTest()[pri:2, instance:package_project2.TestExe@56aac163]" name="LoginPageTest" duration-ms="16033" started-at="2020-03-02T15:08:16 CET" finished-at="2020-03-02T15:08:32 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTest -->
       </class> <!-- package_project2.TestExe -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
