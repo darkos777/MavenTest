@@ -13,6 +13,8 @@ public class TestExe
 	WebDriver driver;
 	Base base;
 	LoginPage login_page;
+	GmailVerification gmail_ver;
+	LoggedInAdmin logged_in;
 	
 	@BeforeTest
 	public void openBrowserTest()
@@ -28,7 +30,7 @@ public class TestExe
 		options.addArguments("--disable-dev-shm-usage");	
 		options.addArguments("--disable-browser-side-navigation"); 
 		options.addArguments("--disable-gpu"); 
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		options.addArguments("--remote-debugging-port=9222");
 		
 		driver = new ChromeDriver(options); 
@@ -38,7 +40,7 @@ public class TestExe
 	public void startAppTest()
 	{
 		base = new Base(driver);
-		base.getAppURL("https://nd-cta-staging.com/login");
+		base.getAppURL("***");
 	}
 	
 	@Test(priority = 2)
@@ -46,8 +48,36 @@ public class TestExe
 	{
 		login_page = new LoginPage(driver);
 		
-		login_page.typeEmail("admin@prodactivesolutions.com");
-		login_page.typePassword("Neur@2019");
+		login_page.typeEmail("***");
+		login_page.typePassword("***");
 		login_page.clickLoginButton();
+	}
+	
+	@Test(priority = 3)
+	public void gmailAutomationTest() throws InterruptedException
+	{
+		gmail_ver = new GmailVerification(driver);
+		
+		gmail_ver.openGmailInNewTab();
+		gmail_ver.typeGmailUsername("***");
+		gmail_ver.clickNextButton();
+		gmail_ver.typePassword("***");
+		gmail_ver.clickNextButton();
+		gmail_ver.openGmailInbox();
+		gmail_ver.openTwoFactorCodeEmail();
+		gmail_ver.copyPasteTextWithCode();
+	}
+	
+	@Test(priority = 4)
+	public void loggedInAdmin()
+	{
+		logged_in = new LoggedInAdmin(driver);
+		
+		logged_in.addNewTester();
+		logged_in.typeTestersName("TestQA");
+		logged_in.typeTestersUsername("TestQA");
+		logged_in.typeTestersEmail("testqa@gmail.com");
+		logged_in.typeTestersPIN("1234");
+		logged_in.confirmToAddNewTester();
 	}
 }

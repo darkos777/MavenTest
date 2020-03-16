@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28257" started-at="2020-03-02T15:08:04 CET" finished-at="2020-03-02T15:08:32 CET">
+  <suite name="Default suite" duration-ms="75844" started-at="2020-03-16T08:56:02 CET" finished-at="2020-03-16T08:57:18 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28257" started-at="2020-03-02T15:08:04 CET" finished-at="2020-03-02T15:08:32 CET">
+    <test name="Default test" duration-ms="75844" started-at="2020-03-16T08:56:02 CET" finished-at="2020-03-16T08:57:18 CET">
       <class name="package_project2.TestExe">
-        <test-method status="PASS" signature="openBrowserTest()[pri:0, instance:package_project2.TestExe@56aac163]" name="openBrowserTest" is-config="true" duration-ms="6429" started-at="2020-03-02T15:08:04 CET" finished-at="2020-03-02T15:08:10 CET">
+        <test-method status="PASS" signature="openBrowserTest()[pri:0, instance:package_project2.TestExe@56aac163]" name="openBrowserTest" is-config="true" duration-ms="6400" started-at="2020-03-16T08:56:02 CET" finished-at="2020-03-16T08:56:09 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserTest -->
-        <test-method status="PASS" signature="startAppTest()[pri:1, instance:package_project2.TestExe@56aac163]" name="startAppTest" duration-ms="5749" started-at="2020-03-02T15:08:10 CET" finished-at="2020-03-02T15:08:16 CET">
+        <test-method status="PASS" signature="startAppTest()[pri:1, instance:package_project2.TestExe@56aac163]" name="startAppTest" duration-ms="6034" started-at="2020-03-16T08:56:09 CET" finished-at="2020-03-16T08:56:15 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppTest -->
-        <test-method status="PASS" signature="LoginPageTest()[pri:2, instance:package_project2.TestExe@56aac163]" name="LoginPageTest" duration-ms="16033" started-at="2020-03-02T15:08:16 CET" finished-at="2020-03-02T15:08:32 CET">
+        <test-method status="PASS" signature="LoginPageTest()[pri:2, instance:package_project2.TestExe@56aac163]" name="LoginPageTest" duration-ms="16610" started-at="2020-03-16T08:56:15 CET" finished-at="2020-03-16T08:56:31 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageTest -->
+        <test-method status="PASS" signature="gmailAutomationTest()[pri:3, instance:package_project2.TestExe@56aac163]" name="gmailAutomationTest" duration-ms="44968" started-at="2020-03-16T08:56:31 CET" finished-at="2020-03-16T08:57:16 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailAutomationTest -->
+        <test-method status="PASS" signature="loggedInAdmin()[pri:4, instance:package_project2.TestExe@56aac163]" name="loggedInAdmin" duration-ms="1767" started-at="2020-03-16T08:57:16 CET" finished-at="2020-03-16T08:57:18 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggedInAdmin -->
       </class> <!-- package_project2.TestExe -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
